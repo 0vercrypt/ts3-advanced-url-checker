@@ -152,7 +152,7 @@ int ts3plugin_onTextMessageEvent(uint64 serverConnectionHandlerID, anyID targetM
 			{
 				if (lstMatchesText[i] != lstMatchesUrl[i])
 				{
-					std::string msg = "Attention! URL " + lstMatchesText[i] + " points to " + lstMatchesUrl[i] + "!";
+					std::string msg = "Attention! URL [b]" + lstMatchesText[i] + "[/b] points to [b]" + lstMatchesUrl[i] + "[/b]!";
 					ts3Functions.printMessageToCurrentTab(msg.c_str());
 				}
 			}
